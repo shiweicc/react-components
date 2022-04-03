@@ -36,7 +36,6 @@ class TodoListItem extends React.Component {
   };
 };
 
-
 var TodoList = (props) => (
   <ul>
     {props.todos.map(todo =>
@@ -45,15 +44,12 @@ var TodoList = (props) => (
   </ul>
 );
 
-
 var App = () => (
   <div>
     <h2>My TO-DO List</h2>
     <TodoList todos={['apple', 'banana', 'kiwi']}/>
   </div>
 );
-
-
 
 ReactDOM.render(
   <App />, document.getElementById('app')
